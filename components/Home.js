@@ -16,7 +16,7 @@ function Home() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ prompt: { input } }),
+      body: JSON.stringify({ prompt: input })
     });
     res = await res.json();
 
